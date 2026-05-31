@@ -17,3 +17,12 @@ jobs:
         run: |
           echo "Você criou seu primeiro workflow com a segunda ação"
           echo "Congratulations sir"
+  segundo-job:
+    name: "script-python"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Script Python"
+        run: |
+          variavel = "Hello World ! "
+          printf(variavel)
+        shell: python
